@@ -24,7 +24,7 @@
 <meta name="author" content="Saif Shabou" />
 
 
-<meta name="date" content="2020-06-04" />
+<meta name="date" content="2020-07-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 
-<link rel="next" href="intro.html"/>
+<link rel="next" href="les-données-ouvertes-en-france.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,14 +50,16 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
 
 
 <style type="text/css">
@@ -139,58 +141,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Open Data book</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentation</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#open-definition"><i class="fa fa-check"></i><b>2.1</b> Open Definition</a></li>
-<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#open-source-applications"><i class="fa fa-check"></i><b>2.2</b> Open-source applications</a></li>
-<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#open-data"><i class="fa fa-check"></i><b>2.3</b> Open data</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="intro.html"><a href="intro.html#open-data-in-institutional-services"><i class="fa fa-check"></i><b>2.3.1</b> Open data in institutional services</a></li>
-<li class="chapter" data-level="2.3.2" data-path="intro.html"><a href="intro.html#open-data-for-machine-learning"><i class="fa fa-check"></i><b>2.3.2</b> Open data for machine learning</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Présentation</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cas-dusages"><i class="fa fa-check"></i><b>1.1</b> Cas d’usages</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#méthode"><i class="fa fa-check"></i><b>1.2</b> Méthode</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#organisation-du-rapport"><i class="fa fa-check"></i><b>1.3</b> Organisation du rapport</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#references"><i class="fa fa-check"></i><b>2.4</b> References</a></li>
-<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#to-read"><i class="fa fa-check"></i><b>2.5</b> To read</a></li>
+<li class="chapter" data-level="2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html"><i class="fa fa-check"></i><b>2</b> Les données ouvertes en France</a><ul>
+<li class="chapter" data-level="2.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#les-données-ouvertes"><i class="fa fa-check"></i><b>2.1</b> Les données ouvertes</a></li>
+<li class="chapter" data-level="2.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#les-démarches-douverture-des-données-en-france"><i class="fa fa-check"></i><b>2.2</b> Les démarches d’ouverture des données en France</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#organismes-publics"><i class="fa fa-check"></i><b>2.2.1</b> Organismes publics</a></li>
+<li class="chapter" data-level="2.2.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#entreprises"><i class="fa fa-check"></i><b>2.2.2</b> Entreprises</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="world-open-data.html"><a href="world-open-data.html"><i class="fa fa-check"></i><b>3</b> World open data</a><ul>
-<li class="chapter" data-level="3.1" data-path="world-open-data.html"><a href="world-open-data.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="world-open-data.html"><a href="world-open-data.html#united-nations"><i class="fa fa-check"></i><b>3.1.1</b> United Nations</a></li>
-<li class="chapter" data-level="3.1.2" data-path="world-open-data.html"><a href="world-open-data.html#world-bank-open-data"><i class="fa fa-check"></i><b>3.1.2</b> World Bank Open data</a></li>
-<li class="chapter" data-level="3.1.3" data-path="world-open-data.html"><a href="world-open-data.html#world-health-organization"><i class="fa fa-check"></i><b>3.1.3</b> World Health Organization</a></li>
-<li class="chapter" data-level="3.1.4" data-path="world-open-data.html"><a href="world-open-data.html#food-and-agriculture-organization-of-the-united-nations"><i class="fa fa-check"></i><b>3.1.4</b> Food and Agriculture Organization of the United Nations</a></li>
-<li class="chapter" data-level="3.1.5" data-path="world-open-data.html"><a href="world-open-data.html#the-world-resources-institute"><i class="fa fa-check"></i><b>3.1.5</b> The World Resources Institute</a></li>
-<li class="chapter" data-level="3.1.6" data-path="world-open-data.html"><a href="world-open-data.html#earth-observation-data"><i class="fa fa-check"></i><b>3.1.6</b> Earth Observation data</a></li>
-<li class="chapter" data-level="3.1.7" data-path="world-open-data.html"><a href="world-open-data.html#other-resources"><i class="fa fa-check"></i><b>3.1.7</b> Other resources</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="world-open-data.html"><a href="world-open-data.html#tools"><i class="fa fa-check"></i><b>3.2</b> Tools</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="world-open-data.html"><a href="world-open-data.html#extracting-world-bank-data"><i class="fa fa-check"></i><b>3.2.1</b> Extracting World Bank Data</a></li>
-<li class="chapter" data-level="3.2.2" data-path="world-open-data.html"><a href="world-open-data.html#extracting-dbnomics-data"><i class="fa fa-check"></i><b>3.2.2</b> Extracting DBnomics Data</a></li>
-<li class="chapter" data-level="3.2.3" data-path="world-open-data.html"><a href="world-open-data.html#other-tools"><i class="fa fa-check"></i><b>3.2.3</b> Other tools</a></li>
+<li class="chapter" data-level="2.3" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#sources-par-thématiques"><i class="fa fa-check"></i><b>2.3</b> Sources par thématiques</a></li>
+<li class="chapter" data-level="2.4" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#agrégation-des-données"><i class="fa fa-check"></i><b>2.4</b> Agrégation des données</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#extraction-des-limites-administratives"><i class="fa fa-check"></i><b>2.4.1</b> Extraction des limites administratives</a></li>
+<li class="chapter" data-level="2.4.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#génération-dune-grille-à-léchelle-de-paris"><i class="fa fa-check"></i><b>2.4.2</b> Génération d’une grille à l’échelle de Paris</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="europe-open-data.html"><a href="europe-open-data.html"><i class="fa fa-check"></i><b>4</b> Europe Open data</a><ul>
-<li class="chapter" data-level="4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#sources-1"><i class="fa fa-check"></i><b>4.1</b> Sources</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="europe-open-data.html"><a href="europe-open-data.html#european-union-open-data-portal"><i class="fa fa-check"></i><b>4.1.1</b> European Union Open data portal</a></li>
-<li class="chapter" data-level="4.1.2" data-path="europe-open-data.html"><a href="europe-open-data.html#oecd-data"><i class="fa fa-check"></i><b>4.1.2</b> OECD Data</a></li>
-<li class="chapter" data-level="4.1.3" data-path="europe-open-data.html"><a href="europe-open-data.html#eurostat"><i class="fa fa-check"></i><b>4.1.3</b> Eurostat</a></li>
+<li class="chapter" data-level="3" data-path="urbanisme.html"><a href="urbanisme.html"><i class="fa fa-check"></i><b>3</b> Urbanisme</a><ul>
+<li class="chapter" data-level="3.1" data-path="urbanisme.html"><a href="urbanisme.html#plan-cadastre"><i class="fa fa-check"></i><b>3.1</b> Plan Cadastre</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-informatisé-pci"><i class="fa fa-check"></i><b>3.1.1</b> Le Plan Cadastre Informatisé PCI</a></li>
+<li class="chapter" data-level="3.1.2" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-simplifié"><i class="fa fa-check"></i><b>3.1.2</b> Le Plan Cadastre simplifié</a></li>
+<li class="chapter" data-level="3.1.3" data-path="urbanisme.html"><a href="urbanisme.html#exploration-des-données"><i class="fa fa-check"></i><b>3.1.3</b> Exploration des données</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#themes"><i class="fa fa-check"></i><b>4.2</b> Themes</a></li>
-<li class="chapter" data-level="4.3" data-path="europe-open-data.html"><a href="europe-open-data.html#tools-1"><i class="fa fa-check"></i><b>4.3</b> Tools</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="europe-open-data.html"><a href="europe-open-data.html#finding-data"><i class="fa fa-check"></i><b>4.3.1</b> Finding data</a></li>
-<li class="chapter" data-level="4.3.2" data-path="europe-open-data.html"><a href="europe-open-data.html#downloading-data"><i class="fa fa-check"></i><b>4.3.2</b> Downloading data</a></li>
-<li class="chapter" data-level="4.3.3" data-path="europe-open-data.html"><a href="europe-open-data.html#replacing-codes-with-labels"><i class="fa fa-check"></i><b>4.3.3</b> replacing codes with labels</a></li>
+<li class="chapter" data-level="3.2" data-path="urbanisme.html"><a href="urbanisme.html#plan-local-durbanisme-plu"><i class="fa fa-check"></i><b>3.2</b> Plan Local d’Urbanisme (PLU)</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="europe-open-data.html"><a href="europe-open-data.html#analysis"><i class="fa fa-check"></i><b>4.4</b> Analysis</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#population-and-social-conditions"><i class="fa fa-check"></i><b>4.4.1</b> Population and social conditions</a></li>
-<li class="chapter" data-level="4.4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#environment"><i class="fa fa-check"></i><b>4.4.2</b> Environment</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="france-open-data.html"><a href="france-open-data.html"><i class="fa fa-check"></i><b>5</b> France Open data</a><ul>
-<li class="chapter" data-level="5.1" data-path="france-open-data.html"><a href="france-open-data.html#opendata-france"><i class="fa fa-check"></i><b>5.1</b> Opendata france</a></li>
-<li class="chapter" data-level="5.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>5.2</b> Opendata locale</a></li>
-<li class="chapter" data-level="5.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>5.3</b> Observatoire de l’Opendata</a></li>
-<li class="chapter" data-level="5.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>5.4</b> Etalab</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
-<li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="4" data-path="transport.html"><a href="transport.html"><i class="fa fa-check"></i><b>4</b> Transport</a></li>
+<li class="chapter" data-level="5" data-path="foncier.html"><a href="foncier.html"><i class="fa fa-check"></i><b>5</b> Foncier</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -214,18 +192,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Open Data book</h1>
 <p class="author"><em>Saif Shabou</em></p>
-<p class="date"><em>2020-06-04</em></p>
+<p class="date"><em>2020-07-21</em></p>
 </div>
-<div id="presentation" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Presentation</h1>
-<p>This book presents an overview of existing Open data platfroms and tools. The book is composed of four chapters:</p>
+<div id="présentation" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Présentation</h1>
+<p>L’objectif de ce rapport consiste à introduire “OpenGeoKPI”: un outil qui permet de centraliser, croiser et aggréger différentes données géo-spatiales qui permettent de caractériser et qualifier le territoire. OpenGeoKPI est une API qui fournit aux ustilisateurs les différentes données qui caractérisent un lieu donnée (à différentes échelles et concernant différentes thématiques) en se basant sur l’open data et des traitements de standardisation, de normalisation, nettoyage et aggrégation de ces donnnées.
+Un portail de géovisualisation de ces indicateurs est aussi disponible afin d’explorer ces indicateurs et qui permet de générer rapidement des cartes thématiques.</p>
+<div id="cas-dusages" class="section level2">
+<h2><span class="header-section-number">1.1</span> Cas d’usages</h2>
+<p>En centralisant les donnnées géo-spatiales dans une seule plateforme, OpenGeoKPI peut répondre aux besoins de différents acteurs de l’aménagement de territoire, de la planification urbaine et de développement immobilier.</p>
 <ul>
-<li><strong>Chapter 2</strong>: It introduces “open” definition and open data principles and lists various open data platforms within several domains and data types.</li>
-<li><strong>Chapter 3</strong>: It focuses on world kpi related data by presenting main sources and some analysis.</li>
-<li><strong>Chapter 4</strong>: We present open data provided in European scale.</li>
-<li><strong>Chapter 5</strong>:The last chapter presents open data platform provided in French scale.</li>
+<li><em>Agences immobilières:</em> Caractérisr les biens immobiliers mis en ventes ou en location en fonction de leurs emplacements (accessibilité en transport, distance par rapport aux équipements, socio-démographie de la popluation du quartier, qualité environnementale…)</li>
+<li><em>Collectivités territoriales:</em> Avoir un accés simple et unique aux différentes données qui qualifient le territoire en terme de logements, population, équipements, espaces verts, transport…</li>
+<li><em>Promoteurs et développeurs immobiliers:</em> OpenGeoKPI permet aux développeurs foncier de mieux évaluer les terrains et les biens immobiliers en fonction des caractéristiques socio-spatiales liées à leurs emplacements géographiques.</li>
+<li><em>Particuliers:</em> L’outil de géovisualisation des indicateurs fournit pas OpenGeoKPI peut être utilisé comme un système d’aide à l’aide à la décision pour les particuliers qui cherchent à habiter dans un nouveau quartier et qui aimeraient avoir accès à des cartes intéractifs qui permettent d’évaluer les lieux en fonction des critères personnalisés.</li>
+</ul>
+</div>
+<div id="méthode" class="section level2">
+<h2><span class="header-section-number">1.2</span> Méthode</h2>
+<ul>
+<li>Lister et cartographier les différentes données brutes disponibles en accès libre et les organiser en fonction des thématiques</li>
+<li>Explorer les données collectées et appliquer des traitements de normalisation, standardisation et netooyage si nécessaiire</li>
+<li>Aggréger les données consolidées et calculer des indicateurs à différentes échelles spatiales</li>
+<li>Construction d’une base de données géo-spatiales qui stocke les dfférents indicateurs calculés</li>
+<li>Développer un outil de visualisation de ces indicateurs</li>
+<li>Développer une API qui permet de fournir ces indicateurs à différentes échelles</li>
+</ul>
+</div>
+<div id="organisation-du-rapport" class="section level2">
+<h2><span class="header-section-number">1.3</span> Organisation du rapport</h2>
+<p>Ce rapport est constitué de x sections:</p>
+<ul>
+<li><em>La première section</em> introduit les démarches d’ouverture des données et décrit les principaux organismes qui perticipent à la publication des données dans différentes thématiques</li>
+<li><em>La deuxième section</em> s’intéresse aux données liées aux questions d’aménagement urbain. On essaiera d’explorer le contenu de ces données et de proposer des indicateurs clés agrégés à l’échelle d’une grille régulière du territoire.</li>
+<li><em>La troisième section</em> s’intéresse aux données liées au domaine du tranport. On essaiera d’explorer le contenu de ces données et de proposer des indicateurs clés agrégés à l’échelle d’une grille régulière du territoire.</li>
+<li><em>La quatrième section</em> s’intéresse aux données liées à l’immobilier et au développement foncier. On essaiera d’explorer le contenu de ces données et de proposer des indicateurs clés agrégés à l’échelle d’une grille régulière du territoire.</li>
 </ul>
 
+</div>
 </div>
             </section>
 
@@ -233,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="les-données-ouvertes-en-france.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

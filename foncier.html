@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Foncier | Open Data book</title>
+  <meta name="description" content="A presentation of Open Data landscape" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Foncier | Open Data book" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A presentation of Open Data landscape" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Foncier | Open Data book" />
+  
+  <meta name="twitter:description" content="A presentation of Open Data landscape" />
+  
+
+<meta name="author" content="Saif Shabou" />
+
+
+<meta name="date" content="2020-07-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="transport.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Open Data book</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Présentation</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#cas-dusages"><i class="fa fa-check"></i><b>1.1</b> Cas d’usages</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#méthode"><i class="fa fa-check"></i><b>1.2</b> Méthode</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#organisation-du-rapport"><i class="fa fa-check"></i><b>1.3</b> Organisation du rapport</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html"><i class="fa fa-check"></i><b>2</b> Les données ouvertes en France</a><ul>
+<li class="chapter" data-level="2.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#les-données-ouvertes"><i class="fa fa-check"></i><b>2.1</b> Les données ouvertes</a></li>
+<li class="chapter" data-level="2.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#les-démarches-douverture-des-données-en-france"><i class="fa fa-check"></i><b>2.2</b> Les démarches d’ouverture des données en France</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#organismes-publics"><i class="fa fa-check"></i><b>2.2.1</b> Organismes publics</a></li>
+<li class="chapter" data-level="2.2.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#entreprises"><i class="fa fa-check"></i><b>2.2.2</b> Entreprises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#sources-par-thématiques"><i class="fa fa-check"></i><b>2.3</b> Sources par thématiques</a></li>
+<li class="chapter" data-level="2.4" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#agrégation-des-données"><i class="fa fa-check"></i><b>2.4</b> Agrégation des données</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#extraction-des-limites-administratives"><i class="fa fa-check"></i><b>2.4.1</b> Extraction des limites administratives</a></li>
+<li class="chapter" data-level="2.4.2" data-path="les-données-ouvertes-en-france.html"><a href="les-données-ouvertes-en-france.html#génération-dune-grille-à-léchelle-de-paris"><i class="fa fa-check"></i><b>2.4.2</b> Génération d’une grille à l’échelle de Paris</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="urbanisme.html"><a href="urbanisme.html"><i class="fa fa-check"></i><b>3</b> Urbanisme</a><ul>
+<li class="chapter" data-level="3.1" data-path="urbanisme.html"><a href="urbanisme.html#plan-cadastre"><i class="fa fa-check"></i><b>3.1</b> Plan Cadastre</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-informatisé-pci"><i class="fa fa-check"></i><b>3.1.1</b> Le Plan Cadastre Informatisé PCI</a></li>
+<li class="chapter" data-level="3.1.2" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-simplifié"><i class="fa fa-check"></i><b>3.1.2</b> Le Plan Cadastre simplifié</a></li>
+<li class="chapter" data-level="3.1.3" data-path="urbanisme.html"><a href="urbanisme.html#exploration-des-données"><i class="fa fa-check"></i><b>3.1.3</b> Exploration des données</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="urbanisme.html"><a href="urbanisme.html#plan-local-durbanisme-plu"><i class="fa fa-check"></i><b>3.2</b> Plan Local d’Urbanisme (PLU)</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="transport.html"><a href="transport.html"><i class="fa fa-check"></i><b>4</b> Transport</a></li>
+<li class="chapter" data-level="5" data-path="foncier.html"><a href="foncier.html"><i class="fa fa-check"></i><b>5</b> Foncier</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Open Data book</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="foncier" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Foncier</h1>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb53-1" title="1"><span class="co"># load data</span></a>
+<a class="sourceLine" id="cb53-2" title="2">dvf =<span class="st"> </span><span class="kw">read.csv2</span>(<span class="st">&quot;data/FrenchOpenData/territoires/foncier/full.csv&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;,&quot;</span>)</a>
+<a class="sourceLine" id="cb53-3" title="3"></a>
+<a class="sourceLine" id="cb53-4" title="4"><span class="co"># process coordinates</span></a>
+<a class="sourceLine" id="cb53-5" title="5">dvf<span class="op">$</span>longitude =<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dvf<span class="op">$</span>longitude))</a>
+<a class="sourceLine" id="cb53-6" title="6">dvf<span class="op">$</span>latitude =<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(dvf<span class="op">$</span>latitude))</a>
+<a class="sourceLine" id="cb53-7" title="7"></a>
+<a class="sourceLine" id="cb53-8" title="8"><span class="co"># sample</span></a>
+<a class="sourceLine" id="cb53-9" title="9">dvf_sample =<span class="st"> </span><span class="kw">sample_n</span>(dvf, <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb53-10" title="10"></a>
+<a class="sourceLine" id="cb53-11" title="11"><span class="co"># plot</span></a>
+<a class="sourceLine" id="cb53-12" title="12"><span class="kw">library</span>(leaflet)</a>
+<a class="sourceLine" id="cb53-13" title="13"><span class="kw">library</span>(leaflet.providers)</a>
+<a class="sourceLine" id="cb53-14" title="14"></a>
+<a class="sourceLine" id="cb53-15" title="15">m =<span class="st"> </span><span class="kw">leaflet</span>() <span class="op">%&gt;%</span></a>
+<a class="sourceLine" id="cb53-16" title="16"><span class="st">  </span><span class="co"># Add CartoDB background map</span></a>
+<a class="sourceLine" id="cb53-17" title="17"><span class="st">  </span><span class="kw">addProviderTiles</span>(<span class="st">&quot;CartoDB.DarkMatter&quot;</span>) <span class="op">%&gt;%</span><span class="st">  </span></a>
+<a class="sourceLine" id="cb53-18" title="18"><span class="st">  </span><span class="co"># Add a marker for each stop</span></a>
+<a class="sourceLine" id="cb53-19" title="19"><span class="st">  </span><span class="kw">addCircleMarkers</span>(<span class="dt">lng=</span> <span class="op">~</span><span class="st"> </span>longitude, <span class="dt">lat=</span> <span class="op">~</span>latitude, <span class="dt">data =</span> dvf_sample,</a>
+<a class="sourceLine" id="cb53-20" title="20">                   <span class="dt">stroke =</span> <span class="ot">FALSE</span>, <span class="dt">fillOpacity =</span> <span class="fl">0.5</span>, <span class="dt">radius =</span><span class="dv">2</span>,</a>
+<a class="sourceLine" id="cb53-21" title="21">                   <span class="dt">popup =</span> <span class="kw">paste</span>(<span class="st">&quot;Adresse nom de voie:&quot;</span>, dvf_sample<span class="op">$</span>adresse_nom_voie, <span class="st">&quot;&lt;br&gt;&quot;</span>,</a>
+<a class="sourceLine" id="cb53-22" title="22">                                 <span class="st">&quot;Date mutation:&quot;</span>, dvf_sample<span class="op">$</span>date_mutation, <span class="st">&quot;&lt;br&gt;&quot;</span>,</a>
+<a class="sourceLine" id="cb53-23" title="23">                                 <span class="st">&quot;Valeur foncière:&quot;</span>, dvf_sample<span class="op">$</span>valeur_fonciere, <span class="st">&quot;&lt;br&gt;&quot;</span>,</a>
+<a class="sourceLine" id="cb53-24" title="24">                                 <span class="st">&quot;Type:&quot;</span>, dvf_sample<span class="op">$</span>type_local, <span class="st">&quot;&lt;br&gt;&quot;</span>)) </a>
+<a class="sourceLine" id="cb53-25" title="25">  </a>
+<a class="sourceLine" id="cb53-26" title="26">m  <span class="co"># Show the map</span></a></code></pre></div>
+<div id="htmlwidget-1a758fdb0d3092726c42" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a758fdb0d3092726c42">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[47.2759,45.719157,48.807079,47.491281,45.698423,43.296863,49.720527,47.670788,43.113833,48.17765,48.673766,null,47.008744,44.776892,46.573505,45.494802,47.314732,47.346165,49.600776,46.859675,43.572396,44.300118,47.477487,47.088396,43.068818,46.260898,48.827851,47.306333,45.680668,48.766612,48.812427,48.854784,48.210031,43.629567,47.653774,48.778901,46.268546,48.50767,48.839485,44.497447,null,50.285302,47.326125,49.858224,48.870471,47.201374,49.510697,48.702886,48.93283,48.878539,50.689166,48.887009,47.38713,48.644893,43.342733,48.288597,48.970967,48.600303,49.353695,45.481792,43.99225,47.223155,48.875316,45.765391,48.700218,43.880545,48.868219,47.586554,47.283045,47.040717,49.356592,47.071751,44.909145,48.44305,45.776955,48.596887,null,45.10003,48.591467,47.995226,44.921219,50.38871,48.844181,46.873687,43.336949,47.243776,47.358732,48.832439,46.010683,45.39138,47.255318,48.606094,45.980704,48.83941,49.638909,48.476077,43.296698,48.081266,44.584008,47.780568],[-1.857958,0.839325,2.384824,-0.553915,4.894086,5.58804,1.164715,-2.754174,1.531672,2.781976,2.382947,null,3.159606,2.202992,4.98261,4.482685,0.363731,-0.868571,2.096638,3.364059,1.487819,0.820671,-0.529966,2.399902,0.154208,5.414895,2.518437,-0.535006,4.484478,2.272061,2.244856,2.421754,-0.904608,-0.397092,-2.035398,2.395815,2.195601,-2.721228,2.259957,0.033436,null,3.968587,-1.627794,2.348449,2.296486,-0.995656,0.118506,6.162869,2.545224,2.347584,2.905699,2.319412,0.693288,2.368823,3.210336,7.035379,-1.247346,-4.260959,0.059899,-0.151875,3.606496,0.112113,3.362186,4.781056,2.313324,6.421997,2.576422,-0.349566,-2.227276,-0.902852,3.83553,5.466242,1.401846,-4.413723,4.837788,2.921994,null,4.145592,0.646999,6.728252,-0.243721,3.120749,2.626304,-1.013746,3.225592,5.986105,-1.730736,2.470025,2.206637,-0.917564,-0.983494,-0.673129,0.107937,2.157503,0.778585,-2.017909,3.512947,5.989518,-0.040855,4.233332],2,null,null,{"interactive":true,"className":"","stroke":false,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.5},null,null,["Adresse nom de voie: LA PEILLE <br> Date mutation: 2019-02-19 <br> Valeur foncière: 310000 <br> Type:  <br>","Adresse nom de voie: GRANDES PIECES DE LA BARBA <br> Date mutation: 2019-10-31 <br> Valeur foncière: 292690 <br> Type:  <br>","Adresse nom de voie: RUE MARCEL HARTMANN <br> Date mutation: 2019-06-28 <br> Valeur foncière: 848000 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: RUE DES CAPUCINS <br> Date mutation: 2019-12-04 <br> Valeur foncière: 89508 <br> Type:  <br>","Adresse nom de voie: BD DU DOC COBLOD <br> Date mutation: 2019-03-28 <br> Valeur foncière: 132563 <br> Type:  <br>","Adresse nom de voie: LE CAMP DE SARLIER <br> Date mutation: 2019-06-03 <br> Valeur foncière: 3014040 <br> Type:  <br>","Adresse nom de voie: LE BOURG - CRESSY <br> Date mutation: 2019-09-11 <br> Valeur foncière: 1 <br> Type:  <br>","Adresse nom de voie: ALL ST GUEN <br> Date mutation: 2019-06-20 <br> Valeur foncière: 120500 <br> Type: Appartement <br>","Adresse nom de voie: MAYRAUTE <br> Date mutation: 2019-09-13 <br> Valeur foncière: 70000 <br> Type:  <br>","Adresse nom de voie: LA VALLEE A CLOS <br> Date mutation: 2019-10-25 <br> Valeur foncière: 90000 <br> Type:  <br>","Adresse nom de voie: RUE FRANCOEUR <br> Date mutation: 2019-07-30 <br> Valeur foncière: 153000 <br> Type: Appartement <br>","Adresse nom de voie: RUE SADI CARNOT <br> Date mutation: 2019-06-07 <br> Valeur foncière: 9000 <br> Type:  <br>","Adresse nom de voie: RUE DU CHAMP MARTIN <br> Date mutation: 2019-08-14 <br> Valeur foncière: 82000 <br> Type: Maison <br>","Adresse nom de voie: FEYT <br> Date mutation: 2019-04-16 <br> Valeur foncière: 28863 <br> Type:  <br>","Adresse nom de voie: ETANG GUILLEMEAU <br> Date mutation: 2019-05-10 <br> Valeur foncière: 700 <br> Type:  <br>","Adresse nom de voie: CHE DES COTES DE CHAVANNE <br> Date mutation: 2019-07-12 <br> Valeur foncière: 365100 <br> Type: Maison <br>","Adresse nom de voie: LA MOLENNERIE <br> Date mutation: 2019-03-25 <br> Valeur foncière: 7500 <br> Type:  <br>","Adresse nom de voie: LE LANDREAU <br> Date mutation: 2019-07-23 <br> Valeur foncière: 18000 <br> Type:  <br>","Adresse nom de voie: L ABBAYE <br> Date mutation: 2019-04-03 <br> Valeur foncière: 2691680 <br> Type:  <br>","Adresse nom de voie: DOMAINE DE DARDAULT <br> Date mutation: 2019-11-05 <br> Valeur foncière: 212400 <br> Type:  <br>","Adresse nom de voie: IMP LEOPOLD GIMIE <br> Date mutation: 2019-07-04 <br> Valeur foncière: 364000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: BUC <br> Date mutation: 2019-07-03 <br> Valeur foncière: 13000 <br> Type:  <br>","Adresse nom de voie: AV PASTEUR <br> Date mutation: 2019-02-23 <br> Valeur foncière: 248020 <br> Type: Appartement <br>","Adresse nom de voie: RUE EDOUARD VAILLANT <br> Date mutation: 2019-11-15 <br> Valeur foncière: 117500 <br> Type:  <br>","Adresse nom de voie: RUE DU GAL DE GAULLE <br> Date mutation: 2019-01-16 <br> Valeur foncière: 603830 <br> Type: Maison <br>","Adresse nom de voie: RUE DE LA RANDE <br> Date mutation: 2019-02-20 <br> Valeur foncière: 185000 <br> Type: Maison <br>","Adresse nom de voie: RUE DES MARAIS <br> Date mutation: 2019-12-16 <br> Valeur foncière: 281772 <br> Type:  <br>","Adresse nom de voie: LE PATY AUX CHEVREAUX <br> Date mutation: 2019-09-13 <br> Valeur foncière: 840000 <br> Type:  <br>","Adresse nom de voie: CHE DE LA PETITE FONT <br> Date mutation: 2019-10-18 <br> Valeur foncière: 282100 <br> Type: Maison <br>","Adresse nom de voie: AV ROGER SALENGRO <br> Date mutation: 2019-03-19 <br> Valeur foncière: 366612.5 <br> Type: DÃ©pendance <br>","Adresse nom de voie: RUE DE PARIS <br> Date mutation: 2019-02-06 <br> Valeur foncière: 320000 <br> Type: Appartement <br>","Adresse nom de voie: RUE VALETTE <br> Date mutation: 2019-06-07 <br> Valeur foncière: 154000 <br> Type: Appartement <br>","Adresse nom de voie: LE CARREFOUR <br> Date mutation: 2019-05-29 <br> Valeur foncière: 26320 <br> Type:  <br>","Adresse nom de voie: PEMBOULERE <br> Date mutation: 2019-09-06 <br> Valeur foncière: 61000 <br> Type:  <br>","Adresse nom de voie: LA GERGODRIE <br> Date mutation: 2019-04-10 <br> Valeur foncière: 24800 <br> Type:  <br>","Adresse nom de voie: AV ROUGET DE LISLE <br> Date mutation: 2019-08-21 <br> Valeur foncière: 304500 <br> Type:  <br>","Adresse nom de voie: LA ROCHE <br> Date mutation: 2019-01-30 <br> Valeur foncière: 370000 <br> Type:  <br>","Adresse nom de voie: LE CLOS RAULT <br> Date mutation: 2019-06-12 <br> Valeur foncière:  <br> Type:  <br>","Adresse nom de voie: RUE PARENT DE ROSAN <br> Date mutation: 2019-10-25 <br> Valeur foncière: 906500 <br> Type: DÃ©pendance <br>","Adresse nom de voie: GRANDE PIECE NORD <br> Date mutation: 2019-05-09 <br> Valeur foncière: 18000 <br> Type:  <br>","Adresse nom de voie: LA GARENNE <br> Date mutation: 2019-10-21 <br> Valeur foncière: 26000 <br> Type:  <br>","Adresse nom de voie: RUE DE GOGNIES CHAUSSEE <br> Date mutation: 2019-07-18 <br> Valeur foncière: 74500 <br> Type: Appartement <br>","Adresse nom de voie: RUE JOACHIM DU BELLAY <br> Date mutation: 2019-09-19 <br> Valeur foncière: 580000 <br> Type: Maison <br>","Adresse nom de voie: RUE DE CAGNY <br> Date mutation: 2019-06-28 <br> Valeur foncière: 164000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: RUE GALILEE <br> Date mutation: 2019-01-14 <br> Valeur foncière: 55000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: PL DU ONZE NOVEMBRE <br> Date mutation: 2019-11-28 <br> Valeur foncière: 70000 <br> Type: Appartement <br>","Adresse nom de voie: RUE DE BELFORT <br> Date mutation: 2019-09-16 <br> Valeur foncière: 147500 <br> Type: Appartement <br>","Adresse nom de voie: RUE JOSEPH MOUGIN <br> Date mutation: 2019-10-22 <br> Valeur foncière: 37000 <br> Type: DÃ©pendance <br>","Adresse nom de voie:  <br> Date mutation: 2019-10-11 <br> Valeur foncière: 132500 <br> Type:  <br>","Adresse nom de voie: RUE PIERRE SEMARD <br> Date mutation: 2019-08-19 <br> Valeur foncière: 1396000 <br> Type: Appartement <br>","Adresse nom de voie: RUE VICTOR HUGO <br> Date mutation: 2019-03-14 <br> Valeur foncière: 667883 <br> Type: Maison <br>","Adresse nom de voie: RUE TRUFFAUT <br> Date mutation: 2019-04-16 <br> Valeur foncière: 3900000 <br> Type: Appartement <br>","Adresse nom de voie: RUE GRECOURT <br> Date mutation: 2019-07-23 <br> Valeur foncière: 72000 <br> Type: Appartement <br>","Adresse nom de voie: CRS DES PLATANES <br> Date mutation: 2019-06-07 <br> Valeur foncière: 200000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: RUE TOURVENTOUSE <br> Date mutation: 2019-08-28 <br> Valeur foncière: 45000 <br> Type: Appartement <br>","Adresse nom de voie: AU HAUT DES MONTS <br> Date mutation: 2019-08-22 <br> Valeur foncière: 502120 <br> Type:  <br>","Adresse nom de voie: LE PONT <br> Date mutation: 2019-09-03 <br> Valeur foncière: 10800 <br> Type:  <br>","Adresse nom de voie: LE MOUSTER <br> Date mutation: 2019-02-22 <br> Valeur foncière: 1520 <br> Type:  <br>","Adresse nom de voie: VC RES L HERMITAGE <br> Date mutation: 2019-12-27 <br> Valeur foncière: 154000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: LES RENARDIERES <br> Date mutation: 2019-11-21 <br> Valeur foncière: 125650 <br> Type:  <br>","Adresse nom de voie: RUE DE LA BOUCHERIE <br> Date mutation: 2019-02-15 <br> Valeur foncière: 1500 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: BERTIGNOLES <br> Date mutation: 2019-09-27 <br> Valeur foncière: 112000 <br> Type:  <br>","Adresse nom de voie: LE PRIEURE <br> Date mutation: 2019-05-23 <br> Valeur foncière: 83000 <br> Type:  <br>","Adresse nom de voie: RUE MARTYRS RESISTANCE <br> Date mutation: 2019-11-19 <br> Valeur foncière: 27000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: AV DU PDT FRANCOIS MITTERRAND <br> Date mutation: 2019-12-24 <br> Valeur foncière: 16000000 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: L ABREUVAGE <br> Date mutation: 2019-05-22 <br> Valeur foncière: 5000 <br> Type:  <br>","Adresse nom de voie: RUE SAINT EXUPERY <br> Date mutation: 2019-01-22 <br> Valeur foncière: 44000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: LE BOIS FLEURI <br> Date mutation: 2019-03-14 <br> Valeur foncière: 235000 <br> Type:  <br>","Adresse nom de voie: RUE NICOLAS COPERNIC <br> Date mutation: 2019-02-08 <br> Valeur foncière: 349000 <br> Type:  <br>","Adresse nom de voie: RUE DE LA GIRARDIERE <br> Date mutation: 2019-06-28 <br> Valeur foncière: 7730000 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: LES BECHEREUX <br> Date mutation: 2019-07-03 <br> Valeur foncière: 1707 <br> Type:  <br>","Adresse nom de voie: RTE NATIONALE ST YLIE <br> Date mutation: 2019-01-11 <br> Valeur foncière: 138000 <br> Type: Maison <br>","Adresse nom de voie: LA GINEBRADE <br> Date mutation: 2019-02-15 <br> Valeur foncière: 391550 <br> Type:  <br>","Adresse nom de voie: RUE ROLAND GARROS <br> Date mutation: 2019-05-23 <br> Valeur foncière: 312000 <br> Type:  <br>","Adresse nom de voie: RUE LOUIS THEVENET <br> Date mutation: 2019-02-15 <br> Valeur foncière: 500000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: BISSEAUX <br> Date mutation: 2019-10-07 <br> Valeur foncière: 40000 <br> Type: Maison <br>","Adresse nom de voie: VILLEMERVRY <br> Date mutation: 2019-02-28 <br> Valeur foncière: 73000 <br> Type:  <br>","Adresse nom de voie: LES MARGOTS <br> Date mutation: 2019-03-13 <br> Valeur foncière: 36400 <br> Type:  <br>","Adresse nom de voie: RUE DE SAINT GILLES <br> Date mutation: 2019-06-07 <br> Valeur foncière: 45000 <br> Type: Maison <br>","Adresse nom de voie: PAQUIS DES CAILLES <br> Date mutation: 2019-09-26 <br> Valeur foncière: 1500 <br> Type:  <br>","Adresse nom de voie: LOISEAU <br> Date mutation: 2019-03-22 <br> Valeur foncière: 3000 <br> Type:  <br>","Adresse nom de voie: RUE VICTOR HUGO <br> Date mutation: 2019-04-05 <br> Valeur foncière: 140000 <br> Type:  <br>","Adresse nom de voie: ALL DE LA FERME <br> Date mutation: 2019-09-16 <br> Valeur foncière: 182000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: RUE CHARETTE <br> Date mutation: 2019-04-11 <br> Valeur foncière: 100000 <br> Type: Maison <br>","Adresse nom de voie: BD DE LA LIBERTE <br> Date mutation: 2019-07-30 <br> Valeur foncière: 258000 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: RUE DENIS PAPIN <br> Date mutation: 2019-12-24 <br> Valeur foncière: 102350 <br> Type: DÃ©pendance <br>","Adresse nom de voie: DOMAINE DU BOURDON <br> Date mutation: 2019-04-12 <br> Valeur foncière: 1731500 <br> Type:  <br>","Adresse nom de voie: AV DE JOINVILLE <br> Date mutation: 2019-08-28 <br> Valeur foncière: 430000 <br> Type: DÃ©pendance <br>","Adresse nom de voie: JEANSANNET <br> Date mutation: 2019-02-08 <br> Valeur foncière: 44000 <br> Type: Maison <br>","Adresse nom de voie: SIPIAN NORD <br> Date mutation: 2019-02-07 <br> Valeur foncière: 114000 <br> Type:  <br>","Adresse nom de voie: LE GATINEAU (SALLE CHAPELL <br> Date mutation: 2019-08-26 <br> Valeur foncière: 132000 <br> Type:  <br>","Adresse nom de voie: LOT LE BOURG <br> Date mutation: 2019-04-09 <br> Valeur foncière:  <br> Type: Maison <br>","Adresse nom de voie: MAGNEZ <br> Date mutation: 2019-06-22 <br> Valeur foncière: 370000 <br> Type:  <br>","Adresse nom de voie: GR GRANDE RUE <br> Date mutation: 2019-03-19 <br> Valeur foncière: 381200 <br> Type: Appartement <br>","Adresse nom de voie: RTE DE GREMONVILLE <br> Date mutation: 2019-10-08 <br> Valeur foncière: 850000 <br> Type: Local industriel. commercial ou assimilÃ© <br>","Adresse nom de voie: LE BOURG <br> Date mutation: 2019-09-30 <br> Valeur foncière: 90000 <br> Type:  <br>","Adresse nom de voie: AV DE CASSIOPEE <br> Date mutation: 2019-07-12 <br> Valeur foncière: 67500 <br> Type: DÃ©pendance <br>","Adresse nom de voie: LE VILLAGE <br> Date mutation: 2019-08-23 <br> Valeur foncière: 156500 <br> Type:  <br>","Adresse nom de voie: RUE DUPRAT <br> Date mutation: 2019-07-26 <br> Valeur foncière: 106000 <br> Type:  <br>","Adresse nom de voie: LE SOUIL <br> Date mutation: 2019-01-31 <br> Valeur foncière: 28401 <br> Type:  <br>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.068818,50.689166],"lng":[-4.413723,7.035379]}},"evals":[],"jsHooks":[]}</script>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="transport.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["OpenDataBook.pdf", "OpenDataBook.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

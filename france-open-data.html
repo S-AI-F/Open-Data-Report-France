@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 France Open data | Open Data book</title>
+  <title>Chapter 3 France Open data | Open Data book</title>
   <meta name="description" content="A presentation of Open Data landscape" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 France Open data | Open Data book" />
+  <meta property="og:title" content="Chapter 3 France Open data | Open Data book" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 France Open data | Open Data book" />
+  <meta name="twitter:title" content="Chapter 3 France Open data | Open Data book" />
   
   <meta name="twitter:description" content="A presentation of Open Data landscape" />
   
@@ -24,15 +24,15 @@
 <meta name="author" content="Saif Shabou" />
 
 
-<meta name="date" content="2020-06-04" />
+<meta name="date" content="2020-07-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="europe-open-data.html"/>
-<link rel="next" href="final-words.html"/>
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="urbanisme.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,14 +50,16 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
 
 
 <style type="text/css">
@@ -139,7 +141,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Open Data book</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Presentation</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Présentation</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
 <li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#open-definition"><i class="fa fa-check"></i><b>2.1</b> Open Definition</a></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#open-source-applications"><i class="fa fa-check"></i><b>2.2</b> Open-source applications</a></li>
@@ -150,46 +152,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#references"><i class="fa fa-check"></i><b>2.4</b> References</a></li>
 <li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#to-read"><i class="fa fa-check"></i><b>2.5</b> To read</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="world-open-data.html"><a href="world-open-data.html"><i class="fa fa-check"></i><b>3</b> World open data</a><ul>
-<li class="chapter" data-level="3.1" data-path="world-open-data.html"><a href="world-open-data.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="world-open-data.html"><a href="world-open-data.html#united-nations"><i class="fa fa-check"></i><b>3.1.1</b> United Nations</a></li>
-<li class="chapter" data-level="3.1.2" data-path="world-open-data.html"><a href="world-open-data.html#world-bank-open-data"><i class="fa fa-check"></i><b>3.1.2</b> World Bank Open data</a></li>
-<li class="chapter" data-level="3.1.3" data-path="world-open-data.html"><a href="world-open-data.html#world-health-organization"><i class="fa fa-check"></i><b>3.1.3</b> World Health Organization</a></li>
-<li class="chapter" data-level="3.1.4" data-path="world-open-data.html"><a href="world-open-data.html#food-and-agriculture-organization-of-the-united-nations"><i class="fa fa-check"></i><b>3.1.4</b> Food and Agriculture Organization of the United Nations</a></li>
-<li class="chapter" data-level="3.1.5" data-path="world-open-data.html"><a href="world-open-data.html#the-world-resources-institute"><i class="fa fa-check"></i><b>3.1.5</b> The World Resources Institute</a></li>
-<li class="chapter" data-level="3.1.6" data-path="world-open-data.html"><a href="world-open-data.html#earth-observation-data"><i class="fa fa-check"></i><b>3.1.6</b> Earth Observation data</a></li>
-<li class="chapter" data-level="3.1.7" data-path="world-open-data.html"><a href="world-open-data.html#other-resources"><i class="fa fa-check"></i><b>3.1.7</b> Other resources</a></li>
+<li class="chapter" data-level="3" data-path="france-open-data.html"><a href="france-open-data.html"><i class="fa fa-check"></i><b>3</b> France Open data</a><ul>
+<li class="chapter" data-level="3.1" data-path="france-open-data.html"><a href="france-open-data.html#organismes"><i class="fa fa-check"></i><b>3.1</b> Organismes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="france-open-data.html"><a href="france-open-data.html#opendata-france"><i class="fa fa-check"></i><b>3.1.1</b> Opendata france</a></li>
+<li class="chapter" data-level="3.1.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>3.1.2</b> Opendata locale</a></li>
+<li class="chapter" data-level="3.1.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>3.1.3</b> Observatoire de l’Opendata</a></li>
+<li class="chapter" data-level="3.1.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>3.1.4</b> Etalab</a></li>
+<li class="chapter" data-level="3.1.5" data-path="france-open-data.html"><a href="france-open-data.html#ademe"><i class="fa fa-check"></i><b>3.1.5</b> Ademe</a></li>
+<li class="chapter" data-level="3.1.6" data-path="france-open-data.html"><a href="france-open-data.html#insee"><i class="fa fa-check"></i><b>3.1.6</b> INSEE</a></li>
+<li class="chapter" data-level="3.1.7" data-path="france-open-data.html"><a href="france-open-data.html#ign"><i class="fa fa-check"></i><b>3.1.7</b> IGN</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="world-open-data.html"><a href="world-open-data.html#tools"><i class="fa fa-check"></i><b>3.2</b> Tools</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="world-open-data.html"><a href="world-open-data.html#extracting-world-bank-data"><i class="fa fa-check"></i><b>3.2.1</b> Extracting World Bank Data</a></li>
-<li class="chapter" data-level="3.2.2" data-path="world-open-data.html"><a href="world-open-data.html#extracting-dbnomics-data"><i class="fa fa-check"></i><b>3.2.2</b> Extracting DBnomics Data</a></li>
-<li class="chapter" data-level="3.2.3" data-path="world-open-data.html"><a href="world-open-data.html#other-tools"><i class="fa fa-check"></i><b>3.2.3</b> Other tools</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="europe-open-data.html"><a href="europe-open-data.html"><i class="fa fa-check"></i><b>4</b> Europe Open data</a><ul>
-<li class="chapter" data-level="4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#sources-1"><i class="fa fa-check"></i><b>4.1</b> Sources</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="europe-open-data.html"><a href="europe-open-data.html#european-union-open-data-portal"><i class="fa fa-check"></i><b>4.1.1</b> European Union Open data portal</a></li>
-<li class="chapter" data-level="4.1.2" data-path="europe-open-data.html"><a href="europe-open-data.html#oecd-data"><i class="fa fa-check"></i><b>4.1.2</b> OECD Data</a></li>
-<li class="chapter" data-level="4.1.3" data-path="europe-open-data.html"><a href="europe-open-data.html#eurostat"><i class="fa fa-check"></i><b>4.1.3</b> Eurostat</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#themes"><i class="fa fa-check"></i><b>4.2</b> Themes</a></li>
-<li class="chapter" data-level="4.3" data-path="europe-open-data.html"><a href="europe-open-data.html#tools-1"><i class="fa fa-check"></i><b>4.3</b> Tools</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="europe-open-data.html"><a href="europe-open-data.html#finding-data"><i class="fa fa-check"></i><b>4.3.1</b> Finding data</a></li>
-<li class="chapter" data-level="4.3.2" data-path="europe-open-data.html"><a href="europe-open-data.html#downloading-data"><i class="fa fa-check"></i><b>4.3.2</b> Downloading data</a></li>
-<li class="chapter" data-level="4.3.3" data-path="europe-open-data.html"><a href="europe-open-data.html#replacing-codes-with-labels"><i class="fa fa-check"></i><b>4.3.3</b> replacing codes with labels</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="europe-open-data.html"><a href="europe-open-data.html#analysis"><i class="fa fa-check"></i><b>4.4</b> Analysis</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#population-and-social-conditions"><i class="fa fa-check"></i><b>4.4.1</b> Population and social conditions</a></li>
-<li class="chapter" data-level="4.4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#environment"><i class="fa fa-check"></i><b>4.4.2</b> Environment</a></li>
+<li class="chapter" data-level="3.2" data-path="france-open-data.html"><a href="france-open-data.html#entreprises"><i class="fa fa-check"></i><b>3.2</b> Entreprises</a></li>
+<li class="chapter" data-level="3.3" data-path="france-open-data.html"><a href="france-open-data.html#sources-par-thématiques"><i class="fa fa-check"></i><b>3.3</b> Sources par thématiques</a></li>
+<li class="chapter" data-level="3.4" data-path="france-open-data.html"><a href="france-open-data.html#agrégation-des-données"><i class="fa fa-check"></i><b>3.4</b> Agrégation des données</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="france-open-data.html"><a href="france-open-data.html#extraction-des-limites-administratives"><i class="fa fa-check"></i><b>3.4.1</b> Extraction des limites administratives</a></li>
+<li class="chapter" data-level="3.4.2" data-path="france-open-data.html"><a href="france-open-data.html#génération-dune-grille-à-léchelle-de-paris"><i class="fa fa-check"></i><b>3.4.2</b> Génération d’une grille à l’échelle de Paris</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="france-open-data.html"><a href="france-open-data.html"><i class="fa fa-check"></i><b>5</b> France Open data</a><ul>
-<li class="chapter" data-level="5.1" data-path="france-open-data.html"><a href="france-open-data.html#opendata-france"><i class="fa fa-check"></i><b>5.1</b> Opendata france</a></li>
-<li class="chapter" data-level="5.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>5.2</b> Opendata locale</a></li>
-<li class="chapter" data-level="5.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>5.3</b> Observatoire de l’Opendata</a></li>
-<li class="chapter" data-level="5.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>5.4</b> Etalab</a></li>
+<li class="chapter" data-level="4" data-path="urbanisme.html"><a href="urbanisme.html"><i class="fa fa-check"></i><b>4</b> Urbanisme</a><ul>
+<li class="chapter" data-level="4.1" data-path="urbanisme.html"><a href="urbanisme.html#plan-cadastre"><i class="fa fa-check"></i><b>4.1</b> Plan Cadastre</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-informatisé-pci"><i class="fa fa-check"></i><b>4.1.1</b> Le Plan Cadastre Informatisé PCI</a></li>
+<li class="chapter" data-level="4.1.2" data-path="urbanisme.html"><a href="urbanisme.html#le-plan-cadastre-simplifié"><i class="fa fa-check"></i><b>4.1.2</b> Le Plan Cadastre simplifié</a></li>
+<li class="chapter" data-level="4.1.3" data-path="urbanisme.html"><a href="urbanisme.html#exploration-des-données"><i class="fa fa-check"></i><b>4.1.3</b> Exploration des données</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="4.2" data-path="urbanisme.html"><a href="urbanisme.html#plan-local-durbanisme-plu"><i class="fa fa-check"></i><b>4.2</b> Plan Local d’Urbanisme (PLU)</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="transport.html"><a href="transport.html"><i class="fa fa-check"></i><b>5</b> Transport</a></li>
+<li class="chapter" data-level="6" data-path="foncier.html"><a href="foncier.html"><i class="fa fa-check"></i><b>6</b> Foncier</a></li>
 <li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -212,39 +201,156 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="france-open-data" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> France Open data</h1>
+<h1><span class="header-section-number">Chapter 3</span> France Open data</h1>
 <p>Les démarches d’open data se développent de plus en plus vite au niveau des collectivités. Ce mouvement a été accéléré avec la promulgation de la loi République Numérique qui incite les différentes collectivités locales (communes, EPCI, départements et régions) à publier leurs données. Pour celà, ils ont été accompagnés par plusieurs dispositifs publics (OpenDataLocale, Vlidata…) ainsi qu’une implication du secteur privé en matière de conseil, formation, mise à disposition de plateformes de publication et d’exploitation…
 Cette politique d’ouverture des données est pilotée par la mission Etalab</p>
 <p>Rapport intéressant: <a href="https://datactivist.coop/ardeche/rapport/partie1.html" class="uri">https://datactivist.coop/ardeche/rapport/partie1.html</a></p>
-<div id="opendata-france" class="section level2">
-<h2><span class="header-section-number">5.1</span> Opendata france</h2>
+<div id="organismes" class="section level2">
+<h2><span class="header-section-number">3.1</span> Organismes</h2>
+<div id="opendata-france" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Opendata france</h3>
 <p>Opendata Frace est une association créée en 2013 à Toulouse et a pour but de regrouper et soutenir les collectivités engagés activement dans une démarche d’ouverture des données publiques.
 Les actions de cette association consistent en:
 - Accompagner et aider les collectivités à lancer ou dévélopper leurs projets opendata
 - Animer des rencontres ou des ateliers permettant aux participants de progrsser dans leur démarche d’ouverture des données
 - Communiquer autour de l’opendata</p>
 </div>
-<div id="opendata-locale" class="section level2">
-<h2><span class="header-section-number">5.2</span> Opendata locale</h2>
+<div id="opendata-locale" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Opendata locale</h3>
 <p>Opendata France a été missionnée pour soutenir les petites et moyennes communes dans leur démarche d’ouvertue des données dans le cadre du projet Opendata Locale. Ceci a permis de produire des supports méthodologiques, pédagogiques et techniques qui permettent d’assurer la mutualisation des connaissances et l’harmonisation et normalisation des données.</p>
 </div>
-<div id="observatoire-de-lopendata" class="section level2">
-<h2><span class="header-section-number">5.3</span> Observatoire de l’Opendata</h2>
+<div id="observatoire-de-lopendata" class="section level3">
+<h3><span class="header-section-number">3.1.3</span> Observatoire de l’Opendata</h3>
 <p>OpendataFrance a mis en place un observatoire de l’open data dans les territoires pour connaitre et comprendre l’avancement dees démarches d’ouverture des données publiques dans les territoires: <a href="http://www.observatoire-opendata.fr/" class="uri">http://www.observatoire-opendata.fr/</a>
 Les données sont collectées majoritairement de manière automatique. L’observatoire propose aussi des indicateurs qui permettent de quantifier et qualifier l’opendata publiée. Il permet ainsi d’évaluer en continu l’ouverture des données dans les collectivités territoriales. Il produit des restitutions sous diférents formats: documents de synthèse eta analyse, outils de visualisation interactive et les bases de données brutes.
 Ce projet a été élaboré en partenariat avec la Caisse des Dépôts et Etalab.</p>
 </div>
-<div id="etalab" class="section level2">
-<h2><span class="header-section-number">5.4</span> Etalab</h2>
+<div id="etalab" class="section level3">
+<h3><span class="header-section-number">3.1.4</span> Etalab</h3>
 <p>Etalab Fait partie de la Direction interministérielle du numérique de l’Etat. Sa mission consiste en la coordination, la conception et mise en oeuvre de la stratégie de l’état dans le domaine de la donnée.
 Il coordonne la politique d’ouverture et de partage des données publiques.
 Il développe et anime la plateforme d’open data data.gouv.fr destinée à rassembler et à mettre à disposition librement l’ensemble des informations publiques de l’Etat, de ses établissments publics, les collectivités territoriales…
 Etalab contribue ) la promotion des sciences des données et de l’intelligence artificielle dans la sphère publique.
 Fing</p>
+</div>
+<div id="ademe" class="section level3">
+<h3><span class="header-section-number">3.1.5</span> Ademe</h3>
+<p><a href="https://data.ademe.fr/" class="uri">https://data.ademe.fr/</a></p>
+</div>
+<div id="insee" class="section level3">
+<h3><span class="header-section-number">3.1.6</span> INSEE</h3>
+<p><a href="https://www.insee.fr/fr/information/4246567" class="uri">https://www.insee.fr/fr/information/4246567</a></p>
+</div>
+<div id="ign" class="section level3">
+<h3><span class="header-section-number">3.1.7</span> IGN</h3>
+<p><a href="https://apicarto.ign.fr/" class="uri">https://apicarto.ign.fr/</a>
+- <a href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#geofla" class="uri">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#geofla</a></p>
 <p>Open data paris: <a href="https://opendata.paris.fr/page/home/" class="uri">https://opendata.paris.fr/page/home/</a></p>
 <p><a href="https://datafrance.info/" class="uri">https://datafrance.info/</a></p>
-<p><a href="https://www.insee.fr/fr/information/4246567" class="uri">https://www.insee.fr/fr/information/4246567</a></p>
+<p><a href="https://data.grandparissud.fr/pages/accueil/" class="uri">https://data.grandparissud.fr/pages/accueil/</a></p>
+</div>
+</div>
+<div id="entreprises" class="section level2">
+<h2><span class="header-section-number">3.2</span> Entreprises</h2>
+<ul>
+<li><p><a href="https://www.geofoncier.fr/" class="uri">https://www.geofoncier.fr/</a></p></li>
+<li><p><a href="https://www.eea.europa.eu/" class="uri">https://www.eea.europa.eu/</a></p></li>
+<li><p>opendatasoft</p></li>
+<li><p>APUR:
+<a href="https://www.apur.org/fr/geo-data/donnees-mises-ligne-2019" class="uri">https://www.apur.org/fr/geo-data/donnees-mises-ligne-2019</a>
+<a href="https://geocatalogue.apur.org/catalogue/srv/fre/catalog.search;jsessionid=node0q83batqexj5lzrl54n9hbpg719646.node0#/home" class="uri">https://geocatalogue.apur.org/catalogue/srv/fre/catalog.search;jsessionid=node0q83batqexj5lzrl54n9hbpg719646.node0#/home</a></p></li>
+<li><p>Institut Paris Région:
+<a href="https://data-iau-idf.opendata.arcgis.com/" class="uri">https://data-iau-idf.opendata.arcgis.com/</a></p></li>
+</ul>
+</div>
+<div id="sources-par-thématiques" class="section level2">
+<h2><span class="header-section-number">3.3</span> Sources par thématiques</h2>
+<p>Nous allons respecter la catgéorisation des thématiques proposée par data.gouv:</p>
+<ul>
+<li>Agriculture et alimentaire
+<a href="https://agreste.agriculture.gouv.fr/agreste-web/disaron/GraFraChap1.2/detail/" class="uri">https://agreste.agriculture.gouv.fr/agreste-web/disaron/GraFraChap1.2/detail/</a>
+<a href="https://agreste.agriculture.gouv.fr/agreste-web/disaron/GraFraIntegral/detail/" class="uri">https://agreste.agriculture.gouv.fr/agreste-web/disaron/GraFraIntegral/detail/</a></li>
+<li>Culture, Communication</li>
+<li>Comptes, économie et emploi</li>
+<li>Education, recheche, formation</li>
+<li>International, europe</li>
+<li>Environnement, énergie, logement</li>
+<li>santé et social</li>
+<li>société, droit, institutions</li>
+<li>Territoires, Transports, Tourisme
+<ul>
+<li>Urbanisme</li>
+<li>Transports</li>
+<li>Foncier</li>
+<li>Tourisme</li>
+</ul></li>
+</ul>
+</div>
+<div id="agrégation-des-données" class="section level2">
+<h2><span class="header-section-number">3.4</span> Agrégation des données</h2>
+<p>Afin de croiser différents indicateurs géospatiaux à l’échelle de la france, nous avons choisi de générer une grille régulière du territoire français et aggréger les différentes données collectées à l’échelle de cette grille.
+Afin de pouvoir démontrer plus facilement un prototype, nous proposons dans un premier temps un prototype à l’échelle de Paris.</p>
+<div id="extraction-des-limites-administratives" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Extraction des limites administratives</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># limites régionales</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3">regions &lt;-<span class="st"> </span>rgdal<span class="op">::</span><span class="kw">readOGR</span>(<span class="dt">dsn =</span> <span class="st">&quot;data/FrenchOpenData/territoires/limites administratives/regions-20180101-shp&quot;</span>, </a>
+<a class="sourceLine" id="cb1-4" title="4">                          <span class="dt">layer =</span> <span class="st">&quot;regions-20180101&quot;</span>,</a>
+<a class="sourceLine" id="cb1-5" title="5">                          <span class="dt">use_iconv =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb1-6" title="6">                          <span class="dt">encoding=</span><span class="st">&quot;UTF-8&quot;</span>)</a></code></pre></div>
+<pre><code>## OGR data source with driver: ESRI Shapefile 
+## Source: &quot;D:\OpenGeoKPI\OpenDataBook-France\data\FrenchOpenData\territoires\limites administratives\regions-20180101-shp&quot;, layer: &quot;regions-20180101&quot;
+## with 18 features
+## It has 5 fields</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># limites départementales</span></a>
+<a class="sourceLine" id="cb3-2" title="2">departements &lt;-<span class="st"> </span>rgdal<span class="op">::</span><span class="kw">readOGR</span>(<span class="st">&quot;data/FrenchOpenData/territoires/limites administratives/contours-simplifies-des-departements-francais-2015.geojson&quot;</span>, </a>
+<a class="sourceLine" id="cb3-3" title="3">                               <span class="dt">use_iconv =</span> <span class="ot">TRUE</span>,</a>
+<a class="sourceLine" id="cb3-4" title="4">                               <span class="dt">encoding=</span><span class="st">&quot;UTF-8&quot;</span>)</a></code></pre></div>
+<pre><code>## OGR data source with driver: GeoJSON 
+## Source: &quot;D:\OpenGeoKPI\OpenDataBook-France\data\FrenchOpenData\territoires\limites administratives\contours-simplifies-des-departements-francais-2015.geojson&quot;, layer: &quot;contours-simplifies-des-departements-francais-2015&quot;
+## with 101 features
+## It has 12 fields, of which 1 list fields</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># extraire les limites des départements appartenant à la région ile de france</span></a>
+<a class="sourceLine" id="cb5-2" title="2">departements_idf =<span class="st"> </span>departements[departements<span class="op">$</span>code_reg <span class="op">==</span><span class="st"> &quot;11&quot;</span>, ]</a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co"># extraire les limites du département de Paris</span></a>
+<a class="sourceLine" id="cb5-5" title="5">departements_paris =<span class="st"> </span>departements_idf[departements_idf<span class="op">$</span>code_dept <span class="op">==</span><span class="st"> &quot;75&quot;</span>, ]</a></code></pre></div>
+</div>
+<div id="génération-dune-grille-à-léchelle-de-paris" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Génération d’une grille à l’échelle de Paris</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">library</span>(sf)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">library</span>(raster)</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co"># définir la granularité</span></a>
+<a class="sourceLine" id="cb6-5" title="5">r &lt;-<span class="st"> </span><span class="kw">raster</span>(<span class="dt">ncol=</span><span class="dv">20</span>, <span class="dt">nrow=</span><span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="co"># définir l&#39;étendu</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="kw">extent</span>(r) &lt;-<span class="st"> </span><span class="kw">extent</span>(departements_paris)</a>
+<a class="sourceLine" id="cb6-9" title="9"></a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="co"># rasterizer le département de paris</span></a>
+<a class="sourceLine" id="cb6-11" title="11">departements_paris_ras&lt;-<span class="st"> </span><span class="kw">rasterize</span>(departements_paris, r, <span class="st">&quot;nom_dept&quot;</span>)</a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="co"># plot pour voir ce que ça donne</span></a>
+<a class="sourceLine" id="cb6-14" title="14">sp<span class="op">::</span><span class="kw">plot</span>(departements_paris_ras, <span class="dt">border =</span> <span class="kw">grey</span>(<span class="fl">0.6</span>))</a></code></pre></div>
+<p><img src="OpenDataBook_files/figure-html/raster_paris-1.png" width="672" /></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="co">## Extract polygons</span></a>
+<a class="sourceLine" id="cb7-2" title="2">departements_paris_ras_poly &lt;-<span class="st"> </span>raster<span class="op">::</span><span class="kw">rasterToPolygons</span>(departements_paris_ras)</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co"># Add polygons id</span></a>
+<a class="sourceLine" id="cb7-5" title="5">departements_paris_ras_poly<span class="op">$</span>cell_ID =<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(departements_paris_ras_poly<span class="op">@</span>data)</a>
+<a class="sourceLine" id="cb7-6" title="6"></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="co"># plot pour voir ce que ça donne</span></a>
+<a class="sourceLine" id="cb7-8" title="8">sp<span class="op">::</span><span class="kw">plot</span>(departements_paris_ras_poly, <span class="dt">border =</span> <span class="kw">grey</span>(<span class="fl">0.6</span>))</a></code></pre></div>
+<p><img src="OpenDataBook_files/figure-html/raster_paris-2.png" width="672" /></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="co"># get the centroids and then convert them to a SpatialPointsDataFrame</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">library</span>(rgeos)</a>
+<a class="sourceLine" id="cb8-3" title="3">departements_paris_ras_poly_centroid &lt;-<span class="st"> </span><span class="kw">SpatialPointsDataFrame</span>(<span class="kw">gCentroid</span>(departements_paris_ras_poly, <span class="dt">byid=</span><span class="ot">TRUE</span>), </a>
+<a class="sourceLine" id="cb8-4" title="4">                                                               departements_paris_ras_poly<span class="op">@</span>data, <span class="dt">match.ID=</span><span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb8-5" title="5"></a>
+<a class="sourceLine" id="cb8-6" title="6">departements_paris_ras_poly_centroid<span class="op">$</span>centroid_lng =<span class="st"> </span><span class="kw">coordinates</span>(departements_paris_ras_poly_centroid)[,<span class="st">&quot;x&quot;</span>]</a>
+<a class="sourceLine" id="cb8-7" title="7">departements_paris_ras_poly_centroid<span class="op">$</span>centroid_lat =<span class="st"> </span><span class="kw">coordinates</span>(departements_paris_ras_poly_centroid)[,<span class="st">&quot;y&quot;</span>]</a></code></pre></div>
 
+</div>
 </div>
 </div>
             </section>
@@ -252,8 +358,8 @@ Fing</p>
           </div>
         </div>
       </div>
-<a href="europe-open-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="urbanisme.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -24,7 +24,7 @@
 <meta name="author" content="Saif Shabou" />
 
 
-<meta name="date" content="2020-06-04" />
+<meta name="date" content="2020-06-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -188,6 +188,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>5.2</b> Opendata locale</a></li>
 <li class="chapter" data-level="5.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>5.3</b> Observatoire de l’Opendata</a></li>
 <li class="chapter" data-level="5.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>5.4</b> Etalab</a></li>
+<li class="chapter" data-level="5.5" data-path="france-open-data.html"><a href="france-open-data.html#sources-par-thématiques"><i class="fa fa-check"></i><b>5.5</b> Sources par thématiques</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="france-open-data.html"><a href="france-open-data.html#data.gouv"><i class="fa fa-check"></i><b>5.5.1</b> Data.gouv</a></li>
+<li class="chapter" data-level="5.5.2" data-path="france-open-data.html"><a href="france-open-data.html#ademe"><i class="fa fa-check"></i><b>5.5.2</b> Ademe</a></li>
+<li class="chapter" data-level="5.5.3" data-path="france-open-data.html"><a href="france-open-data.html#territoires"><i class="fa fa-check"></i><b>5.5.3</b> Territoires</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
@@ -3013,7 +3018,7 @@ avia_paoc
 dataset
 </td>
 <td style="text-align:left;">
-27.05.2020
+11.06.2020
 </td>
 <td style="text-align:left;">
 27.05.2020
@@ -3039,7 +3044,7 @@ avia_paoa
 dataset
 </td>
 <td style="text-align:left;">
-27.05.2020
+11.06.2020
 </td>
 <td style="text-align:left;">
 27.05.2020
@@ -3065,7 +3070,7 @@ avia_paocc
 dataset
 </td>
 <td style="text-align:left;">
-27.05.2020
+11.06.2020
 </td>
 <td style="text-align:left;">
 27.05.2020
@@ -3091,7 +3096,7 @@ avia_paoac
 dataset
 </td>
 <td style="text-align:left;">
-27.05.2020
+11.06.2020
 </td>
 <td style="text-align:left;">
 27.05.2020
@@ -3126,7 +3131,7 @@ NA
 <pre><code>## [1] &quot;t2020_rk310&quot;</code></pre>
 <p>Get the whole corresponding table. As the table is annual data, it is more convient to use a numeric time variable than use the default date format:</p>
 <div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb78-1" title="1">dat &lt;-<span class="st"> </span><span class="kw">get_eurostat</span>(id, <span class="dt">time_format =</span> <span class="st">&quot;num&quot;</span>)</a></code></pre></div>
-<pre><code>## Table t2020_rk310 cached at C:\Users\saif\AppData\Local\Temp\Rtmpsddkb0/eurostat/t2020_rk310_num_code_TF.rds</code></pre>
+<pre><code>## Table t2020_rk310 cached at C:\Users\saif\AppData\Local\Temp\RtmpEFKCtE/eurostat/t2020_rk310_num_code_TF.rds</code></pre>
 <div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb80-1" title="1"><span class="kw">str</span>(dat)</a></code></pre></div>
 <pre><code>## tibble [2,641 x 5] (S3: tbl_df/tbl/data.frame)
 ##  $ unit   : Factor w/ 1 level &quot;PC&quot;: 1 1 1 1 1 1 1 1 1 1 ...
@@ -10097,7 +10102,7 @@ BE
 2017-01-01
 </td>
 <td style="text-align:right;">
-10.5
+10.8
 </td>
 </tr>
 <tr>
@@ -10125,7 +10130,7 @@ CH
 2017-01-01
 </td>
 <td style="text-align:right;">
-6.2
+6.3
 </td>
 </tr>
 <tr>
@@ -10153,7 +10158,7 @@ CZ
 2017-01-01
 </td>
 <td style="text-align:right;">
-12.3
+12.4
 </td>
 </tr>
 <tr>
@@ -10167,7 +10172,7 @@ DE
 2017-01-01
 </td>
 <td style="text-align:right;">
-11.3
+11.2
 </td>
 </tr>
 <tr>
@@ -10181,7 +10186,7 @@ DK
 2017-01-01
 </td>
 <td style="text-align:right;">
-8.8
+8.9
 </td>
 </tr>
 <tr>
@@ -10335,7 +10340,7 @@ IS
 2017-01-01
 </td>
 <td style="text-align:right;">
-17.2
+17.4
 </td>
 </tr>
 <tr>
@@ -10377,7 +10382,7 @@ LT
 2017-01-01
 </td>
 <td style="text-align:right;">
-7.3
+7.4
 </td>
 </tr>
 <tr>
@@ -10405,7 +10410,7 @@ LV
 2017-01-01
 </td>
 <td style="text-align:right;">
-6.1
+6.0
 </td>
 </tr>
 <tr>
@@ -10447,7 +10452,7 @@ NO
 2017-01-01
 </td>
 <td style="text-align:right;">
-10.3
+10.2
 </td>
 </tr>
 <tr>
@@ -10489,7 +10494,7 @@ RO
 2017-01-01
 </td>
 <td style="text-align:right;">
-5.9
+6.0
 </td>
 </tr>
 <tr>
@@ -10517,7 +10522,7 @@ SI
 2017-01-01
 </td>
 <td style="text-align:right;">
-8.5
+8.4
 </td>
 </tr>
 <tr>

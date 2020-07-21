@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Final Words | Open Data book</title>
+  <title>Chapter 4 Final Words | Open Data book</title>
   <meta name="description" content="A presentation of Open Data landscape" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Final Words | Open Data book" />
+  <meta property="og:title" content="Chapter 4 Final Words | Open Data book" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Final Words | Open Data book" />
+  <meta name="twitter:title" content="Chapter 4 Final Words | Open Data book" />
   
   <meta name="twitter:description" content="A presentation of Open Data landscape" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Saif Shabou" />
 
 
-<meta name="date" content="2020-06-04" />
+<meta name="date" content="2020-07-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,14 +50,16 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
 
 
 <style type="text/css">
@@ -150,46 +152,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#references"><i class="fa fa-check"></i><b>2.4</b> References</a></li>
 <li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#to-read"><i class="fa fa-check"></i><b>2.5</b> To read</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="world-open-data.html"><a href="world-open-data.html"><i class="fa fa-check"></i><b>3</b> World open data</a><ul>
-<li class="chapter" data-level="3.1" data-path="world-open-data.html"><a href="world-open-data.html#sources"><i class="fa fa-check"></i><b>3.1</b> Sources</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="world-open-data.html"><a href="world-open-data.html#united-nations"><i class="fa fa-check"></i><b>3.1.1</b> United Nations</a></li>
-<li class="chapter" data-level="3.1.2" data-path="world-open-data.html"><a href="world-open-data.html#world-bank-open-data"><i class="fa fa-check"></i><b>3.1.2</b> World Bank Open data</a></li>
-<li class="chapter" data-level="3.1.3" data-path="world-open-data.html"><a href="world-open-data.html#world-health-organization"><i class="fa fa-check"></i><b>3.1.3</b> World Health Organization</a></li>
-<li class="chapter" data-level="3.1.4" data-path="world-open-data.html"><a href="world-open-data.html#food-and-agriculture-organization-of-the-united-nations"><i class="fa fa-check"></i><b>3.1.4</b> Food and Agriculture Organization of the United Nations</a></li>
-<li class="chapter" data-level="3.1.5" data-path="world-open-data.html"><a href="world-open-data.html#the-world-resources-institute"><i class="fa fa-check"></i><b>3.1.5</b> The World Resources Institute</a></li>
-<li class="chapter" data-level="3.1.6" data-path="world-open-data.html"><a href="world-open-data.html#earth-observation-data"><i class="fa fa-check"></i><b>3.1.6</b> Earth Observation data</a></li>
-<li class="chapter" data-level="3.1.7" data-path="world-open-data.html"><a href="world-open-data.html#other-resources"><i class="fa fa-check"></i><b>3.1.7</b> Other resources</a></li>
+<li class="chapter" data-level="3" data-path="france-open-data.html"><a href="france-open-data.html"><i class="fa fa-check"></i><b>3</b> France Open data</a><ul>
+<li class="chapter" data-level="3.1" data-path="france-open-data.html"><a href="france-open-data.html#organismes"><i class="fa fa-check"></i><b>3.1</b> Organismes</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="france-open-data.html"><a href="france-open-data.html#opendata-france"><i class="fa fa-check"></i><b>3.1.1</b> Opendata france</a></li>
+<li class="chapter" data-level="3.1.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>3.1.2</b> Opendata locale</a></li>
+<li class="chapter" data-level="3.1.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>3.1.3</b> Observatoire de l’Opendata</a></li>
+<li class="chapter" data-level="3.1.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>3.1.4</b> Etalab</a></li>
+<li class="chapter" data-level="3.1.5" data-path="france-open-data.html"><a href="france-open-data.html#ademe"><i class="fa fa-check"></i><b>3.1.5</b> Ademe</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="world-open-data.html"><a href="world-open-data.html#tools"><i class="fa fa-check"></i><b>3.2</b> Tools</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="world-open-data.html"><a href="world-open-data.html#extracting-world-bank-data"><i class="fa fa-check"></i><b>3.2.1</b> Extracting World Bank Data</a></li>
-<li class="chapter" data-level="3.2.2" data-path="world-open-data.html"><a href="world-open-data.html#extracting-dbnomics-data"><i class="fa fa-check"></i><b>3.2.2</b> Extracting DBnomics Data</a></li>
-<li class="chapter" data-level="3.2.3" data-path="world-open-data.html"><a href="world-open-data.html#other-tools"><i class="fa fa-check"></i><b>3.2.3</b> Other tools</a></li>
+<li class="chapter" data-level="3.2" data-path="france-open-data.html"><a href="france-open-data.html#sources-par-thématiques"><i class="fa fa-check"></i><b>3.2</b> Sources par thématiques</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="france-open-data.html"><a href="france-open-data.html#territoires---urbanisme"><i class="fa fa-check"></i><b>3.2.1</b> Territoires - Urbanisme</a></li>
+<li class="chapter" data-level="3.2.2" data-path="france-open-data.html"><a href="france-open-data.html#territoires---transport"><i class="fa fa-check"></i><b>3.2.2</b> Territoires - Transport</a></li>
+<li class="chapter" data-level="3.2.3" data-path="france-open-data.html"><a href="france-open-data.html#territoires---foncier"><i class="fa fa-check"></i><b>3.2.3</b> Territoires - Foncier</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="europe-open-data.html"><a href="europe-open-data.html"><i class="fa fa-check"></i><b>4</b> Europe Open data</a><ul>
-<li class="chapter" data-level="4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#sources-1"><i class="fa fa-check"></i><b>4.1</b> Sources</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="europe-open-data.html"><a href="europe-open-data.html#european-union-open-data-portal"><i class="fa fa-check"></i><b>4.1.1</b> European Union Open data portal</a></li>
-<li class="chapter" data-level="4.1.2" data-path="europe-open-data.html"><a href="europe-open-data.html#oecd-data"><i class="fa fa-check"></i><b>4.1.2</b> OECD Data</a></li>
-<li class="chapter" data-level="4.1.3" data-path="europe-open-data.html"><a href="europe-open-data.html#eurostat"><i class="fa fa-check"></i><b>4.1.3</b> Eurostat</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#themes"><i class="fa fa-check"></i><b>4.2</b> Themes</a></li>
-<li class="chapter" data-level="4.3" data-path="europe-open-data.html"><a href="europe-open-data.html#tools-1"><i class="fa fa-check"></i><b>4.3</b> Tools</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="europe-open-data.html"><a href="europe-open-data.html#finding-data"><i class="fa fa-check"></i><b>4.3.1</b> Finding data</a></li>
-<li class="chapter" data-level="4.3.2" data-path="europe-open-data.html"><a href="europe-open-data.html#downloading-data"><i class="fa fa-check"></i><b>4.3.2</b> Downloading data</a></li>
-<li class="chapter" data-level="4.3.3" data-path="europe-open-data.html"><a href="europe-open-data.html#replacing-codes-with-labels"><i class="fa fa-check"></i><b>4.3.3</b> replacing codes with labels</a></li>
-</ul></li>
-<li class="chapter" data-level="4.4" data-path="europe-open-data.html"><a href="europe-open-data.html#analysis"><i class="fa fa-check"></i><b>4.4</b> Analysis</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="europe-open-data.html"><a href="europe-open-data.html#population-and-social-conditions"><i class="fa fa-check"></i><b>4.4.1</b> Population and social conditions</a></li>
-<li class="chapter" data-level="4.4.2" data-path="europe-open-data.html"><a href="europe-open-data.html#environment"><i class="fa fa-check"></i><b>4.4.2</b> Environment</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="france-open-data.html"><a href="france-open-data.html"><i class="fa fa-check"></i><b>5</b> France Open data</a><ul>
-<li class="chapter" data-level="5.1" data-path="france-open-data.html"><a href="france-open-data.html#opendata-france"><i class="fa fa-check"></i><b>5.1</b> Opendata france</a></li>
-<li class="chapter" data-level="5.2" data-path="france-open-data.html"><a href="france-open-data.html#opendata-locale"><i class="fa fa-check"></i><b>5.2</b> Opendata locale</a></li>
-<li class="chapter" data-level="5.3" data-path="france-open-data.html"><a href="france-open-data.html#observatoire-de-lopendata"><i class="fa fa-check"></i><b>5.3</b> Observatoire de l’Opendata</a></li>
-<li class="chapter" data-level="5.4" data-path="france-open-data.html"><a href="france-open-data.html#etalab"><i class="fa fa-check"></i><b>5.4</b> Etalab</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="4" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -212,7 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="final-words" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Final Words</h1>
+<h1><span class="header-section-number">Chapter 4</span> Final Words</h1>
 <p>We have finished a nice book.</p>
 
 </div>
